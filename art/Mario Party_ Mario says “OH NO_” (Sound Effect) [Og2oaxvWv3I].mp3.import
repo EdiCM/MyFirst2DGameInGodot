@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://y5llmlws6g6v"
+path="res://.godot/imported/Mario Party_ Mario says “OH NO_” (Sound Effect) [Og2oaxvWv3I].mp3-43897097edef938e7814c5f7709b7248.mp3str"
+
+[deps]
+
+source_file="res://art/Mario Party_ Mario says “OH NO_” (Sound Effect) [Og2oaxvWv3I].mp3"
+dest_files=["res://.godot/imported/Mario Party_ Mario says “OH NO_” (Sound Effect) [Og2oaxvWv3I].mp3-43897097edef938e7814c5f7709b7248.mp3str"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

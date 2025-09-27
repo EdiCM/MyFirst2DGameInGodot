@@ -29,7 +29,7 @@ func _process(delta):
 		$AnimatedSprite2D.stop()
 	
 	position += velocity * delta
-	position = position.clamp(Vector2.ZERO, screen_size)
+	wrap_around_screen()
 	
 	if velocity.x != 0:
 		$AnimatedSprite2D.animation = "walk"
@@ -40,6 +40,18 @@ func _process(delta):
 		$AnimatedSprite2D.animation = "up"
 		$AnimatedSprite2D.flip_v = velocity.y > 0
 
+func wrap_around_screen():
+	# Screen wrapping horizontal
+	if position.x < 0:
+		position.x = screen_size.x
+	elif position.x > screen_size.x:
+		position.x = 0
+	
+	# Screen wrapping vertical
+	if position.y < 0:
+		position.y = screen_size.y
+	elif position.y > screen_size.y:
+		position.y = 0
 
 func _on_body_entered(_body):
 	hide() # Player disappears after being hit.
